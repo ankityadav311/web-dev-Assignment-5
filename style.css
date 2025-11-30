@@ -1,0 +1,97 @@
+:root{
+  --blue:#2f6ff6;
+  --muted:#7b8a95;
+  --bg:#f3f6f8;
+  --card:#ffffff;
+  --accent:#ffb158;
+  --dark:#0f1724;
+  --radius:12px;
+  --max-width:1200px;
+}
+*{box-sizing:border-box}
+body{
+  font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+  margin:0;background:var(--bg);color:var(--dark);-webkit-font-smoothing:antialiased;
+}
+
+/* NAVBAR */
+.site-header{
+  background:#fff;padding:18px 6%;display:flex;align-items:center;justify-content:space-between;
+  box-shadow:0 1px 0 rgba(0,0,0,0.04);position:sticky;top:0;z-index:40;
+}
+.brand{font-weight:800;color:var(--blue);font-size:24px;letter-spacing:0.4px}
+nav ul{list-style:none;display:flex;gap:28px;margin:0;padding:0;align-items:center}
+nav a{color:#333;text-decoration:none;font-weight:500}
+
+/* HERO */
+.hero{
+  height:420px;background-image:url('https://images.unsplash.com/photo-1505691723518-36a3ba6a25f6?w=1700&q=80&auto=format&fit=crop');
+  background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;position:relative;
+}
+.hero::after{content:"";position:absolute;inset:0;background:rgba(7,34,87,0.55)}
+.hero-inner{position:relative;z-index:2;text-align:center;color:#fff;max-width:var(--max-width);padding:20px}
+.hero h1{font-size:48px;margin:0 0 10px;font-weight:700}
+.hero p{margin:0 0 18px;font-weight:400;opacity:0.95}
+
+/* SEARCH BOX */
+.search-box{
+  display:flex;gap:12px;align-items:center;justify-content:center;background:var(--card);
+  padding:12px;border-radius:10px;box-shadow:0 10px 30px rgba(20,40,80,0.12);width:100%;max-width:980px;margin:18px auto 0;
+}
+.search-box input, .search-box select{
+  padding:12px;border-radius:8px;border:1px solid #e7ebef;min-width:140px;font-size:14px;
+}
+.btn-search{background:var(--blue);color:#fff;padding:10px 16px;border-radius:8px;border:none;font-weight:700;cursor:pointer}
+
+/* SECTION */
+.section{padding:56px 6%}
+.section h2{text-align:center;color:var(--blue);font-size:34px;margin:6px 0 30px}
+
+/* CARDS GRID */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;max-width:var(--max-width);margin:0 auto}
+.card{background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:0 8px 20px rgba(20,40,80,0.06)}
+.card img{width:100%;height:200px;object-fit:cover;display:block}
+.card-body{padding:18px}
+.price{color:var(--blue);font-weight:800;margin-bottom:6px}
+.title{font-weight:700;margin-bottom:8px}
+.meta{color:var(--muted);font-size:14px}
+
+/* DETAIL */
+.detail{max-width:1100px;margin:0 auto;background:var(--card);padding:22px;border-radius:var(--radius);display:flex;gap:22px;box-shadow:0 12px 30px rgba(20,40,80,0.06);align-items:flex-start}
+.detail img{width:430px;height:280px;object-fit:cover;border-radius:10px}
+.detail .info h3{color:var(--blue);margin-top:0}
+.detail .info p{color:#475569;line-height:1.6}
+.detail .meta{color:var(--muted);margin:12px 0}
+.detail-price{font-weight:800;color:var(--blue);margin-top:6px}
+
+/* AGENTS */
+.agents{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;max-width:var(--max-width);margin:0 auto}
+.agent{background:var(--card);padding:34px;border-radius:var(--radius);text-align:center;box-shadow:0 8px 20px rgba(20,40,80,0.06);position:relative}
+.agent img{width:88px;height:88px;border-radius:50%;object-fit:cover;border:4px solid var(--blue);margin-top:-60px;background:#fff}
+.agent h4{color:var(--blue);margin:12px 0 6px}
+.agent p{color:var(--muted);margin:0}
+
+/* FOOTER */
+.site-footer{background:#141829;color:#cbd5e1;padding:48px 6%;margin-top:36px}
+.footer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;max-width:var(--max-width);margin:0 auto}
+.site-footer h4{color:var(--accent);margin:0 0 12px}
+.site-footer ul{list-style:none;padding:0;margin:0}
+.site-footer p, .site-footer li{color:#cbd5e1;margin:8px 0}
+copyright{display:block}
+.site-footer .copyright{max-width:var(--max-width);margin:28px auto 0;text-align:right;color:#8b97a5}
+
+/* RESPONSIVE */
+@media (max-width:1000px){
+  .cards, .agents{grid-template-columns:repeat(2,1fr)}
+  .detail{flex-direction:column;align-items:center;text-align:center}
+  .detail img{width:100%;height:320px}
+}
+@media (max-width:640px){
+  nav ul{display:none}
+  .hero h1{font-size:32px}
+  .cards, .agents{grid-template-columns:1fr}
+  .search-box{flex-direction:column;gap:10px;padding:14px}
+  .detail img{height:220px}
+  .footer-grid{grid-template-columns:1fr}
+  .site-footer .copyright{text-align:center}
+}

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DreamHome — Real Estate</title>
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="brand">DreamHome</div>
+    <nav>
+      <ul>
+        <li><a href="#">Properties</a></li>
+        <li><a href="#">Agents</a></li>
+        <li><a href="#">Why Us</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Find Your Home</h1>
+      <p>Discover the best properties for sale and rent</p>
+
+      <!-- SEARCH -->
+      <form class="search-box" aria-label="property search">
+        <input type="text" placeholder="Location" />
+        <select>
+          <option>Price</option>
+          <option>$0 - $500k</option>
+          <option>$500k - $1M</option>
+        </select>
+        <select>
+          <option>Bedrooms</option>
+          <option>1</option><option>2</option><option>3+</option>
+        </select>
+        <select>
+          <option>Type</option>
+          <option>House</option><option>Apartment</option><option>Townhouse</option>
+        </select>
+        <button class="btn-search" type="submit">Search</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- LATEST PROPERTIES -->
+  <section class="section">
+    <h2>Latest Properties</h2>
+
+    <div class="cards">
+      <article class="card">
+        <img src="modern_family_house.jpg" alt="house">
+        <div class="card-body">
+          <div class="price">$950,000</div>
+          <div class="title">Modern Family House</div>
+          <div class="meta">4 Beds · 3 Baths · 2,500 sqft<br>Mumbai, CA</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="luxuary_villa.png" alt="villa">
+        <div class="card-body">
+          <div class="price">$1,200,000</div>
+          <div class="title">Luxury Villa</div>
+          <div class="meta">5 Beds · 4 Baths · 3,800 sqft<br>Delhi, FL</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="cozy_townhouse.png" alt="townhouse">
+        <div class="card-body">
+          <div class="price">$650,000</div>
+          <div class="title">Cozy Townhouse</div>
+          <div class="meta">3 Beds · 2 Baths · 1,800 sqft<br>Mumbai, WA</div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROPERTY DETAIL (example single) -->
+  <section class="section">
+    <h2>Property Detail</h2>
+    <div class="detail">
+      <img src="kitchen.png" alt="kitchen">
+      <div class="info">
+        <h3>Luxury Villa in Delhi</h3>
+        <p>Experience the ultimate in luxury living with this stunning villa featuring 5 bedrooms, 4 bathrooms, a private pool, and beautiful ocean views. Located in the heart of Miami, close to schools and amenities.</p>
+        <div class="meta">5 Beds · 4 Baths · 3,800 sqft · Delhi, FL</div>
+        <div class="price detail-price">$1,200,000</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AGENTS -->
+  <section class="section">
+    <h2>Featured Agents</h2>
+    <div class="agents">
+      <div class="agent">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="agent">
+        <h4>John Carter</h4>
+        <div class="meta">Senior Agent</div>
+        <p>10+ years of experience in luxury properties.</p>
+      </div>
+
+      <div class="agent">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="agent">
+        <h4>Emily Stone</h4>
+        <div class="meta">Property Specialist</div>
+        <p>Expert in family homes and apartments.</p>
+      </div>
+
+      <div class="agent">
+        <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="agent">
+        <h4>Michael Lee</h4>
+        <div class="meta">Commercial Expert</div>
+        <p>Specialist in commercial and investment properties.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section class="section">
+    <h2>Latest Blog Posts</h2>
+    <div class="cards">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?w=1200&q=80&auto=format&fit=crop" alt="">
+        <div class="card-body">
+          <div class="title">Tips for First-Time Home Buyers</div>
+          <div class="meta">Learn how to navigate the market and find your dream home.</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200&q=80&auto=format&fit=crop" alt="">
+        <div class="card-body">
+          <div class="title">How to Stage Your Home for Sale</div>
+          <div class="meta">Make your property stand out and attract more buyers.</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&q=80&auto=format&fit=crop" alt="">
+        <div class="card-body">
+          <div class="title">Understanding Mortgage Rates</div>
+          <div class="meta">Get the latest insights on mortgage rates and buying power.</div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h4>DreamHome</h4>
+        <ul>
+          <li>About Us</li><li>Careers</li><li>Press</li><li>Investors</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li>Properties</li><li>Agents</li><li>Why Us</li><li>Blog</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>123 Main St, Delhi, FL<br>info@dreamhome.com<br>+1 234 567 890</p>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <ul>
+          <li>Facebook</li><li>Instagram</li><li>Twitter</li><li>LinkedIn</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">© 2025 DreamHome Real Estate. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>
